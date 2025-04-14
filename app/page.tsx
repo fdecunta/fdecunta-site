@@ -64,7 +64,7 @@ function HomeContent() {
                   <div className="flex items-center gap-2">
                     <MapPin size={18} className="text-black flex-shrink-0" />
                     <span className="text-muted-foreground">
-		    {t"department"}, {t("university")}, Buenos Aires, Argentina
+		    {t("department")}, {t("university")}, Buenos Aires, Argentina
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
