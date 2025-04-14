@@ -64,17 +64,17 @@ function HomeContent() {
                   <div className="flex items-center gap-2">
                     <MapPin size={18} className="text-black flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Department of Ecology, {t("university")}, Seattle, WA 98195
+		    {t"department"}, {t("university")}, Buenos Aires, Argentina
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mail size={18} className="text-black flex-shrink-0" />
-                    <span className="text-muted-foreground">jane.smith@university.edu</span>
+                    <span className="text-muted-foreground">fdecunta@agro.uba.ar</span>
                   </div>
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/fdecunta" target="_blank" rel="noopener noreferrer">
                     <Button
                       variant="outline"
                       size="sm"
@@ -84,7 +84,7 @@ function HomeContent() {
                       GitHub
                     </Button>
                   </Link>
-                  <Link href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://scholar.google.co.in/citations?user=ZuiT7QMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener noreferrer">
                     <Button
                       variant="outline"
                       size="sm"
@@ -94,7 +94,7 @@ function HomeContent() {
                       Google Scholar
                     </Button>
                   </Link>
-                  <Link href="https://orcid.org" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://orcid.org/0009-0004-5774-1085" target="_blank" rel="noopener noreferrer">
                     <Button
                       variant="outline"
                       size="sm"
@@ -104,7 +104,7 @@ function HomeContent() {
                       ORCID
                     </Button>
                   </Link>
-                  <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.linkedin.com/in/facundo-decunta-06ba39291/" target="_blank" rel="noopener noreferrer">
                     <Button
                       variant="outline"
                       size="sm"

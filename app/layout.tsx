@@ -14,9 +14,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Dr. Jane Smith | Ecology Researcher",
+  title: "Facundo Decunta",
   description:
-    "Personal website of Dr. Jane Smith, PhD in Ecology specializing in forest ecosystem dynamics and climate change impacts.",
+    "Personal website of Facundo Decunta, PhD candidate in Ecology specializing in plant interactions with symbiotic microorganisms and insect herbivores.",
     generator: 'v0.dev'
 }
 
