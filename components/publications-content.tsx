@@ -207,50 +207,16 @@ const publications = [
 
 const bookChapters = [
   {
-    title: "Forest Ecosystem Responses to Climate Change",
-    authors: "Smith, J., Anderson, L.",
-    book: "Climate Change and Terrestrial Ecosystems",
-    editors: "Roberts, M., Chen, W.",
-    publisher: "Academic Press, London",
-    pages: "123-145",
-    year: 2022,
-    link: "https://example.com/bookchapter1",
-  },
-  {
-    title: "Conservation Strategies for Vulnerable Forest Species",
-    authors: "Smith, J., Miller, S., Thompson, J.",
-    book: "Biodiversity Conservation in the Anthropocene",
-    editors: "Wilson, A., Brown, D.",
-    publisher: "Springer, New York",
-    pages: "211-230",
-    year: 2021,
-    link: "https://example.com/bookchapter2",
   },
 ]
 
 const conferences = [
   {
-    title: "Monitoring forest biodiversity using remote sensing techniques",
-    authors: "Smith, J., Davis, R.",
-    conference: "International Conference on Ecology and Conservation",
-    location: "Barcelona, Spain",
-    date: "June 15-18, 2023",
+    title: "Fake title",
+    authors: "Foo Bar, John Doe",
+    conference: "International Conference on Forest Ecology",
+    location: "New York, USA",
+    date: "September 3-6, 2023",
     link: "https://example.com/conference1",
-  },
-  {
-    title: "Adaptive management approaches for forest conservation",
-    authors: "Smith, J., Wilson, T., Brown, C.",
-    conference: "Annual Meeting of the Ecological Society of America",
-    location: "Portland, OR, USA",
-    date: "August 7-12, 2022",
-    link: "https://example.com/conference2",
-  },
-  {
-    title: "Citizen science contributions to long-term ecological monitoring",
-    authors: "Smith, J., Garcia, M.",
-    conference: "European Congress of Conservation Biology",
-    location: "Prague, Czech Republic",
-    date: "September 3-6, 2021",
-    link: "https://example.com/conference3",
   },
 ]
