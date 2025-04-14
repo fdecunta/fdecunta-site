@@ -44,27 +44,5 @@ const bookChapters = [
 
 const conferences = [
   {
-    title: "Monitoring forest biodiversity using remote sensing techniques",
-    authors: "Smith, J., Davis, R.",
-    conference: "International Conference on Ecology and Conservation",
-    location: "Barcelona, Spain",
-    date: "June 15-18, 2023",
-    link: "https://example.com/conference1",
-  },
-  {
-    title: "Adaptive management approaches for forest conservation",
-    authors: "Smith, J., Wilson, T., Brown, C.",
-    conference: "Annual Meeting of the Ecological Society of America",
-    location: "Portland, OR, USA",
-    date: "August 7-12, 2022",
-    link: "https://example.com/conference2",
-  },
-  {
-    title: "Citizen science contributions to long-term ecological monitoring",
-    authors: "Smith, J., Garcia, M.",
-    conference: "European Congress of Conservation Biology",
-    location: "Prague, Czech Republic",
-    date: "September 3-6, 2021",
-    link: "https://example.com/conference3",
   },
 ]

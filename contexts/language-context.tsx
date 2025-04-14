@@ -88,7 +88,7 @@ const translations = {
     // Home page
     dr_title: "Facundo Decunta",
     phd_title: "Estudiante doctoral en Ecología",
-    short_intro: "Estudiante doctoral en ecología, especializado en las interacciones de las plantas con microorganismos simbióticos y herbívoros insectos",
+    short_intro: "Estudiante doctoral en ecología, especializado en las interacciones de las plantas con microorganismos simbióticos y herbívoros insectos.",
     about_me: "Sobre Mí",
     view_publications: "Publicaciones",
     photo_gallery: "Galería de Fotos",
