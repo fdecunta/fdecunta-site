@@ -25,7 +25,7 @@ export function AboutContent() {
               <div className="col-span-1 flex justify-center md:justify-start">
                 <div className="relative w-64 h-64 overflow-hidden rounded-lg shadow-xl">
                   <Image
-                    src="/placeholder.svg?height=320&width=320"
+                    src="/yo.png?height=320&width=320"
                     alt="Profile Photo"
                     fill
                     className="object-cover"

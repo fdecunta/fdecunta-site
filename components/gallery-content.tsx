@@ -46,7 +46,7 @@ export function GalleryContent() {
                       className="bg-white rounded-lg border border-black/5 shadow-sm overflow-hidden hover-lift"
                     >
                       <div className="relative h-64 w-full">
-                        <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+                        <Image src={image.src || "/yo.png"} alt={image.alt} fill className="object-cover" />
                       </div>
                       <div className="p-6">
                         <h3 className="font-medium text-lg">{image.title}</h3>
@@ -66,7 +66,7 @@ export function GalleryContent() {
                       className="bg-white rounded-lg border border-black/5 shadow-sm overflow-hidden hover-lift"
                     >
                       <div className="relative h-64 w-full">
-                        <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+                        <Image src={image.src || "/yo.png"} alt={image.alt} fill className="object-cover" />
                       </div>
                       <div className="p-6">
                         <h3 className="font-medium text-lg">{image.title}</h3>
@@ -87,42 +87,42 @@ export function GalleryContent() {
 
 const researchImages = [
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Forest ecosystem research",
     title: "Forest Ecosystem Study",
     location: "Pacific Northwest, USA",
     description: "Collecting data on tree growth patterns in old-growth forests.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Field sampling",
     title: "Soil Sampling",
     location: "Cascade Mountains, Washington",
     description: "Analyzing soil microbial communities in different forest types.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Research team",
     title: "Research Team",
     location: "Field Station, Oregon",
     description: "Our research team setting up long-term monitoring plots.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Drone mapping",
     title: "Drone Mapping",
     location: "Olympic National Park",
     description: "Using drones to map forest canopy structure.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Lab work",
     title: "Laboratory Analysis",
     location: "University Research Lab",
     description: "Processing leaf samples for biochemical analysis.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Conference presentation",
     title: "Conference Presentation",
     location: "International Ecology Conference, Barcelona",
@@ -132,42 +132,42 @@ const researchImages = [
 
 const personalImages = [
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Hiking",
     title: "Weekend Hike",
     location: "Mount Rainier, Washington",
     description: "Exploring alpine meadows during summer bloom.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Kayaking",
     title: "Kayaking Adventure",
     location: "Puget Sound, Washington",
     description: "Weekend kayaking trip with friends.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Bird watching",
     title: "Bird Watching",
     location: "Skagit Valley, Washington",
     description: "Observing migratory birds during spring migration.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Garden",
     title: "Home Garden",
     location: "Backyard",
     description: "My native plant garden that attracts local pollinators.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Dog hiking",
     title: "Hiking with Luna",
     location: "Olympic Peninsula",
     description: "Weekend adventures with my dog Luna.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/yo.png?height=400&width=600",
     alt: "Photography",
     title: "Nature Photography",
     location: "Various Locations",

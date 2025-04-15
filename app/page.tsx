@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Github, Linkedin, ExternalLink, ArrowRight, MapPin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
+import { publications } from "@/data/publications-data"
 
 export default function Home() {
   return <HomeContent />
@@ -50,7 +51,7 @@ function HomeContent() {
             <div className="md:col-span-4 flex justify-center">
               <div className="relative w-64 h-64 md:w-72 md:h-72 overflow-hidden rounded-full border-8 border-white shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=320&width=320"
+                  src="/yo.png?height=320&width=320"
                   alt="Profile Photo"
                   fill
                   className="object-cover"
@@ -135,18 +136,7 @@ function HomeContent() {
               </Link>
             </div>
             <div className="grid grid-cols-1 gap-8">
-              {[
-                {
-                  title: "Climate-driven shifts in forest composition across temperate regions",
-                  authors: "Smith, J., Johnson, A., Williams, B. (2023)",
-                  journal: "Journal of Ecology, 111(3), 567-582",
-                },
-                {
-                  title: "Long-term monitoring reveals biodiversity loss in protected areas",
-                  authors: "Smith, J., Brown, C., Davis, E. (2022)",
-                  journal: "Conservation Biology, 36(2), 234-248",
-                },
-              ].map((pub, index) => (
+              {publications.map((pub, index) => (
                 <div
                   key={index}
                   className="p-8 bg-white rounded-lg border border-black/5 shadow-sm hover:shadow-md transition-shadow hover-lift"
