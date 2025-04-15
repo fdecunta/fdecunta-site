@@ -74,7 +74,7 @@ const translations = {
     // Contact information
     address: "Address",
     email: "Email",
-    university: "Faculty of Agronomy, University of Buenos Aires",
+    university: "IFEVA - Faculty of Agronomy, University of Buenos Aires",
     department: "Department of Quantitative Methods And Information Systems",
     all_rights_reserved: "All rights reserved.",
   },
@@ -119,7 +119,7 @@ const translations = {
     // Contact information
     address: "Dirección",
     email: "Correo Electrónico",
-    university: "Facultad de Agronomía, Universidad de Buenos Aires",
+    university: "IFEVA - Facultad de Agronomía, Universidad de Buenos Aires",
     department: "Departamento de Métodos Cuantitativos y Sistemas de Información",
     all_rights_reserved: "Todos los derechos reservados.",
   },
