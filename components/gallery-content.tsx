@@ -126,11 +126,11 @@ const researchImages = [
 
 const personalImages = [
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Hiking",
-    title: "Weekend Hike",
-    location: "Mount Rainier, Washington",
-    description: "Exploring alpine meadows during summer bloom.",
+    src: "/images/gallery/argentina_champions.jpg?height=400&width=600",
+    alt: "Argentina, 2022 World Cup champions.",
+    title: "Argentina, 2022 World Cup champions.",
+    location: "Plaza Irlanda, Buenos Aires, Argentina",
+    description: "The best moment that ever happened",
   },
   {
     src: "/placeholder.svg?height=400&width=600",
