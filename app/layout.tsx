@@ -7,16 +7,17 @@ import { LanguageProvider } from "@/contexts/language-context"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
+// Font setup - using only one font for simplicity
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-sans",
 })
 
 export const metadata: Metadata = {
-  title: "Facundo Decunta",
+  title: "Dr. Jane Smith | Ecology Researcher",
   description:
-    "Personal website of Facundo Decunta, PhD candidate in Ecology specializing in plant interactions with symbiotic microorganisms and insect herbivores.",
+    "Personal website of Dr. Jane Smith, PhD in Ecology specializing in forest ecosystem dynamics and climate change impacts.",
     generator: 'v0.dev'
 }
 
@@ -27,11 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased min-h-screen flex flex-col bg-white`}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+      <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <LanguageProvider>
-            <header className="sticky top-0 z-40 border-b bg-white/80 backdrop-blur-md">
-              <div className="container mx-auto px-4 py-4">
+            <header className="sticky top-0 z-40 border-b bg-background">
+              <div className="container mx-auto">
                 <Navigation />
               </div>
             </header>

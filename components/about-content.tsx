@@ -9,36 +9,39 @@ export function AboutContent() {
   return (
     <div>
       {/* Header */}
-      <section className="py-20 bg-secondary/30 grid-pattern">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">{t("about_me")}</h1>
+      <section className="py-12 border-b">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-3xl font-medium">{t("about_me")}</h1>
           </div>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-16">
+        <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <div className="col-span-1 flex justify-center md:justify-start">
-                <div className="relative w-64 h-64 overflow-hidden rounded-lg shadow-xl">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+              <div className="md:col-span-4">
+                <div className="relative">
                   <Image
-                    src="/yo.png?height=320&width=320"
+                    src="/placeholder.svg?height=400&width=400"
                     alt="Profile Photo"
-                    fill
-                    className="object-cover"
+                    width={400}
+                    height={400}
+                    className="object-cover aspect-square"
                     priority
                   />
                 </div>
               </div>
-              <div className="col-span-2">
-                <h2 className="text-2xl font-semibold mb-6">{t("bio_title")}</h2>
-                <div className="space-y-6 text-muted-foreground">
-                  <p className="leading-relaxed">{t("bio")}</p>
-                  <p className="leading-relaxed">{t("bio_extended")}</p>
-                  <p className="leading-relaxed">{t("bio_additional")}</p>
+              <div className="md:col-span-8">
+                <div className="prose max-w-none">
+                  <h2 className="text-xl font-medium mb-6">{t("bio_title")}</h2>
+                  <div className="space-y-6">
+                    <p className="text-mono-600 leading-relaxed">{t("bio")}</p>
+                    <p className="text-mono-600 leading-relaxed">{t("bio_extended")}</p>
+                    <p className="text-mono-600 leading-relaxed">{t("bio_additional")}</p>
+                  </div>
                 </div>
               </div>
             </div>

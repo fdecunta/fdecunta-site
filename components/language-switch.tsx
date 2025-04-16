@@ -15,7 +15,7 @@ export function LanguageSwitch() {
       variant="outline"
       size="sm"
       onClick={toggleLanguage}
-      className="text-xs font-medium px-3 py-1 h-8 rounded-md border-black/10 hover:bg-black hover:text-white transition-colors"
+      className="text-sm font-medium h-8 border-mono-200 hover:bg-mono-100"
     >
       {language === "en" ? "ES" : "EN"}
     </Button>

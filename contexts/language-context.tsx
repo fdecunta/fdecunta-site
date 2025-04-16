@@ -41,9 +41,9 @@ const translations = {
     gallery: "Gallery",
 
     // Home page
-    dr_title: "Facundo Decunta",
-    phd_title: "PhD candidate in Ecology.",
-    short_intro: "Specializing in plant interactions with symbiotic microorganisms and insect herbivores, also interested in statistics and programming.",
+    dr_title: "Dr. Jane Smith",
+    phd_title: "PhD in Ecology",
+    short_intro: "Ecologist specializing in forest ecosystem dynamics and climate change impacts.",
     about_me: "About Me",
     view_publications: "Publications",
     photo_gallery: "Photo Gallery",
@@ -53,11 +53,11 @@ const translations = {
 
     // About page
     bio_title: "Biography",
-    bio: "This should be my bio.",
+    bio: "I am an ecologist specializing in forest ecosystem dynamics and climate change impacts. My research focuses on understanding how forest communities respond to environmental changes and developing conservation strategies for vulnerable ecosystems.",
     bio_extended:
-      "This should be my extended bio!",
+      "With over 8 years of experience in ecological research, I have conducted fieldwork across diverse forest ecosystems in North America and Europe. My work combines traditional ecological methods with advanced remote sensing and data science approaches to understand complex ecosystem processes at multiple scales.",
     bio_additional:
-      "This is additioanl info about me or whatever.",
+      "I am passionate about communicating science to diverse audiences and engaging communities in conservation efforts. My research has been published in leading ecological journals and presented at international conferences. I collaborate with various conservation organizations and government agencies to translate research findings into practical conservation strategies. When not in the field or lab, I enjoy hiking, wildlife photography, and volunteering for local environmental education programs.",
 
     // Publications page
     journal_articles: "Journal Articles",
@@ -68,14 +68,13 @@ const translations = {
     view_proceedings: "View Proceedings",
 
     // Gallery page
-    research_fieldwork: "Research",
+    research_fieldwork: "Research & Fieldwork",
     personal: "Personal",
 
     // Contact information
     address: "Address",
     email: "Email",
-    university: "IFEVA - Faculty of Agronomy, University of Buenos Aires",
-    department: "Department of Quantitative Methods And Information Systems",
+    university: "University of Environmental Sciences",
     all_rights_reserved: "All rights reserved.",
   },
   es: {
@@ -86,9 +85,9 @@ const translations = {
     gallery: "Galería",
 
     // Home page
-    dr_title: "Facundo Decunta",
-    phd_title: "Estudiante doctoral en Ecología.",
-    short_intro: "Enfocado en las interacciones entre plantas, microorganismos simbióticos y herbívoros insectos, con interés en la estadística y la programación.",
+    dr_title: "Dra. Jane Smith",
+    phd_title: "Doctorado en Ecología",
+    short_intro: "Ecóloga especializada en la dinámica de ecosistemas forestales y los impactos del cambio climático.",
     about_me: "Sobre Mí",
     view_publications: "Publicaciones",
     photo_gallery: "Galería de Fotos",
@@ -98,29 +97,28 @@ const translations = {
 
     // About page
     bio_title: "Biografía",
-    bio: "Mi bio.",
+    bio: "Soy ecóloga especializada en la dinámica de ecosistemas forestales y los impactos del cambio climático. Mi investigación se centra en comprender cómo las comunidades forestales responden a los cambios ambientales y en desarrollar estrategias de conservación para ecosistemas vulnerables.",
     bio_extended:
-      "My bio extendidad.",
+      "Con más de 8 años de experiencia en investigación ecológica, he realizado trabajo de campo en diversos ecosistemas forestales de América del Norte y Europa. Mi trabajo combina métodos ecológicos tradicionales con enfoques avanzados de teledetección y ciencia de datos para comprender procesos ecosistémicos complejos a múltiples escalas.",
     bio_additional:
-      "Mas cosas de mi o lo que sea.",
+      "Me apasiona comunicar la ciencia a diversas audiencias e involucrar a las comunidades en los esfuerzos de conservación. Mi investigación ha sido publicada en importantes revistas ecológicas y presentada en conferencias internacionales. Colaboro con varias organizaciones de conservación y agencias gubernamentales para traducir los resultados de la investigación en estrategias prácticas de conservación. Cuando no estoy en el campo o en el laboratorio, disfruto de caminatas, fotografía de vida silvestre y voluntariado en programas locales de educación ambiental.",
 
     // Publications page
-    journal_articles: "Artículos",
+    journal_articles: "Artículos de Revistas",
     book_chapters: "Capítulos de Libros",
-    conference_proceedings: "Congresos",
+    conference_proceedings: "Actas de Conferencias",
     view_publication: "Ver Publicación",
     view_chapter: "Ver Capítulo",
     view_proceedings: "Ver Actas",
 
     // Gallery page
-    research_fieldwork: "Investigación",
+    research_fieldwork: "Investigación y Trabajo de Campo",
     personal: "Personal",
 
     // Contact information
     address: "Dirección",
     email: "Correo Electrónico",
-    university: "IFEVA - Facultad de Agronomía, Universidad de Buenos Aires",
-    department: "Departamento de Métodos Cuantitativos y Sistemas de Información",
+    university: "Universidad de Ciencias Ambientales",
     all_rights_reserved: "Todos los derechos reservados.",
   },
 }

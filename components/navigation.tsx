@@ -22,9 +22,9 @@ export function Navigation() {
   ]
 
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="flex items-center justify-between py-4">
       <Link href="/" className="text-lg font-medium">
-        Facundo Decunta
+        Jane Smith
       </Link>
 
       {/* Mobile menu button */}
@@ -33,18 +33,17 @@ export function Navigation() {
       </button>
 
       {/* Desktop navigation */}
-      <div className="hidden md:flex items-center space-x-10">
-        <ul className="flex space-x-10">
+      <div className="hidden md:flex items-center space-x-8">
+        <ul className="flex space-x-8">
           {navItems.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`relative py-1.5 font-medium text-sm transition-colors ${
-                  pathname === item.href ? "text-black" : "text-muted-foreground hover:text-black"
+                className={`py-2 transition-colors ${
+                  pathname === item.href ? "text-foreground font-medium" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.label}
-                {pathname === item.href && <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black" />}
               </Link>
             </li>
           ))}
@@ -54,14 +53,16 @@ export function Navigation() {
 
       {/* Mobile navigation */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-white border-b md:hidden z-50 py-6 px-4">
+        <div className="absolute top-16 left-0 right-0 bg-background border-b md:hidden z-50 py-6 px-4 fade-in">
           <ul className="flex flex-col space-y-6">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`block py-1 text-sm font-medium transition-colors ${
-                    pathname === item.href ? "text-black" : "text-muted-foreground hover:text-black"
+                  className={`block py-2 transition-colors ${
+                    pathname === item.href
+                      ? "text-foreground font-medium"
+                      : "text-muted-foreground hover:text-foreground"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
