@@ -63,11 +63,11 @@ function HomeContent() {
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <MapPin size={18} className="text-mono-500 flex-shrink-0" />
-                  <span className="text-mono-600">Department of Ecology, {t("university")}, Seattle, WA 98195</span>
+                  <span className="text-mono-600">{t("department")}, {t("university")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={18} className="text-mono-500 flex-shrink-0" />
-                  <span className="text-mono-600">jane.smith@university.edu</span>
+                  <span className="text-mono-600">fdecunta@agro.uba.ar</span>
                 </div>
               </div>
 
