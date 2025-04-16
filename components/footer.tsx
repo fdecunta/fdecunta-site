@@ -15,25 +15,25 @@ export function Footer() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
             <div className="mb-6 md:mb-0">
-              <h3 className="text-lg font-medium mb-1">Jane Smith</h3>
+              <h3 className="text-lg font-medium mb-1">Facundo Decunta</h3>
               <p className="text-mono-500 text-sm">{t("phd_title")}</p>
             </div>
             <div className="flex gap-6">
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Link href="https://github.com/fdecunta" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="text-mono-500 hover:text-mono-900 transition-colors" size={20} />
               </Link>
               <Link
-                href="https://scholar.google.com"
+                href="https://scholar.google.co.in/citations?user=ZuiT7QMAAAAJ&hl=es&oi=ao"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google Scholar"
               >
                 <GoogleScholarIcon className="text-mono-500 hover:text-mono-900 transition-colors h-5 w-5" />
               </Link>
-              <Link href="https://orcid.org" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+              <Link href="https://orcid.org/0009-0004-5774-1085" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
                 <OrcidIcon className="text-mono-500 hover:text-mono-900 transition-colors h-5 w-5" />
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Link href="https://www.linkedin.com/in/facundo-decunta-06ba39291/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="text-mono-500 hover:text-mono-900 transition-colors" size={20} />
               </Link>
             </div>

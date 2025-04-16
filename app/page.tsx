@@ -72,25 +72,25 @@ function HomeContent() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/fdecunta" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
                     <Github size={16} className="mr-2" />
                     GitHub
                   </Button>
                 </Link>
-                <Link href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://scholar.google.co.in/citations?user=ZuiT7QMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
                     <GoogleScholarIcon className="h-4 w-4 mr-2" />
                     Google Scholar
                   </Button>
                 </Link>
-                <Link href="https://orcid.org" target="_blank" rel="noopener noreferrer">
+                <Link href="https://orcid.org/0009-0004-5774-1085" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
                     <OrcidIcon className="h-4 w-4 mr-2" />
                     ORCID
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/in/facundo-decunta-06ba39291/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
                     <Linkedin size={16} className="mr-2" />
                     LinkedIn
