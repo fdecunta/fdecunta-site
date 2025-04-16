@@ -207,11 +207,11 @@ const researchImages = [
     description: "Collecting data on tree growth patterns in old-growth forests.",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Field sampling",
-    title: "Soil Sampling",
-    location: "Cascade Mountains, Washington",
-    description: "Analyzing soil microbial communities in different forest types.",
+    src: "/images/gallery/epichloe.jpg?height=400&width=600",
+    alt: "Epichloë photo", 
+    title: "Epichloë occultans",
+    location: "IFEVA - Buenos Aires, Argentina",
+    description: "Photo taken with my phone of Epichloë occultans.",
   },
   {
     src: "/placeholder.svg?height=400&width=600",
