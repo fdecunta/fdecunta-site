@@ -21,12 +21,12 @@ export function Footer() {
               <li className="flex items-start">
                 <MapPin size={16} className="text-muted-foreground mt-1 mr-2 flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  Department of Ecology, {t("university")}, Seattle, WA 98195
+                  {t("department")}, {t("university")}
                 </span>
               </li>
               <li className="flex items-center">
                 <Mail size={16} className="text-muted-foreground mr-2 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">jane.smith@university.edu</span>
+                <span className="text-sm text-muted-foreground">fdecunta@agro.uba.ar</span>
               </li>
             </ul>
           </div>
@@ -70,21 +70,21 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Link href="https://github.com/fdecunta" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="text-muted-foreground hover:text-foreground transition-colors" size={18} />
               </Link>
               <Link
-                href="https://scholar.google.com"
+                href="https://scholar.google.com/citations?user=ZuiT7QMAAAAJ&hl=es&oi=ao"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Google Scholar"
               >
                 <GoogleScholarIcon className="text-muted-foreground hover:text-foreground transition-colors h-[18px] w-[18px]" />
               </Link>
-              <Link href="https://orcid.org" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+              <Link href="https://orcid.org/0009-0004-5774-1085" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
                 <OrcidIcon className="text-muted-foreground hover:text-foreground transition-colors h-[18px] w-[18px]" />
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Link href="https://www.linkedin.com/in/facundo-decunta-06ba39291/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="text-muted-foreground hover:text-foreground transition-colors" size={18} />
               </Link>
             </div>
@@ -96,7 +96,7 @@ export function Footer() {
             &copy; {currentYear} {t("dr_title")}. {t("all_rights_reserved")}
           </p>
           <p className="text-xs text-muted-foreground">
-            <span className="font-medium">Jane Smith</span> • {t("phd_title")}
+            <span className="font-medium">Facundo Decunta</span> • {t("phd_title")}
           </p>
         </div>
       </div>

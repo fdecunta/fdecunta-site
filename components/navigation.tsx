@@ -25,7 +25,7 @@ export function Navigation() {
   return (
     <nav className="flex items-center justify-between py-4">
       <Link href="/" className="text-lg font-medium">
-        Jane Smith
+        Facundo Decunta
       </Link>
 
       {/* Mobile menu button */}

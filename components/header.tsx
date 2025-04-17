@@ -45,7 +45,7 @@ export function Header() {
       <div className="container-wide">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-lg font-medium">
-            Jane Smith
+            Facundo Decunta
           </Link>
 
           {/* Desktop navigation */}

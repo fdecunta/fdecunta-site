@@ -44,31 +44,31 @@ export default function Home() {
               <div className="pt-6">
                 <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-3">Connect</h3>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/fdecunta" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="sm" className="h-10">
                       <Github size={16} className="mr-2" />
                       GitHub
                     </Button>
                   </Link>
-                  <Link href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://scholar.google.com/citations?user=ZuiT7QMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="sm" className="h-10">
                       <GoogleScholarIcon className="h-4 w-4 mr-2" />
                       Google Scholar
                     </Button>
                   </Link>
-                  <Link href="https://orcid.org" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://orcid.org/0009-0004-5774-1085" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="sm" className="h-10">
                       <OrcidIcon className="h-4 w-4 mr-2" />
                       ORCID
                     </Button>
                   </Link>
-                  <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.linkedin.com/in/facundo-decunta-06ba39291/" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="sm" className="h-10">
                       <Linkedin size={16} className="mr-2" />
                       LinkedIn
                     </Button>
                   </Link>
-                  <Link href="mailto:jane.smith@university.edu">
+                  <Link href="mailto:fdecunta@agro.uba.ar>
                     <Button variant="outline" size="sm" className="h-10">
                       <Mail size={16} className="mr-2" />
                       Email
@@ -99,10 +99,10 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-xl font-medium mb-4">Contact Information</h2>
               <div className="flex items-center gap-2">
-                <p className="text-muted-foreground">Department of Ecology, {t("university")}, Seattle, WA 98195</p>
+                <p className="text-muted-foreground">{t("department")}, {t("university")}</p>
               </div>
               <div className="flex items-center gap-2">
-                <p className="text-muted-foreground">jane.smith@university.edu</p>
+                <p className="text-muted-foreground">fdecunta@agro.uba.ar</p>
               </div>
             </div>
           </div>

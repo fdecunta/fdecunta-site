@@ -31,7 +31,7 @@ export function BlogEditor({ post, isEditing = false }: BlogEditorProps) {
   const [content, setContent] = useState(post?.content || "")
   const [coverImage, setCoverImage] = useState(post?.coverImage || "/placeholder.svg?height=600&width=1200")
   const [date, setDate] = useState(post?.date || new Date().toISOString().split("T")[0])
-  const [author, setAuthor] = useState(post?.author || "Dr. Jane Smith")
+  const [author, setAuthor] = useState(post?.author || "Facundo Decunta")
   const [readingTime, setReadingTime] = useState(post?.readingTime?.toString() || "5")
   const [categories, setCategories] = useState<string[]>(post?.categories || [])
   const [tags, setTags] = useState<string[]>(post?.tags || [])
