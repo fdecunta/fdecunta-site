@@ -71,58 +71,32 @@ export const publications: Publication[] = [
 ]
 
 export const bookChapters: BookChapter[] = [
-  {
-    title: "Forest Ecosystem Responses to Climate Change",
-    authors: "Smith, J., Anderson, L.",
-    book: "Climate Change and Terrestrial Ecosystems",
-    editors: "Roberts, M., Chen, W.",
-    publisher: "Academic Press, London",
-    pages: "123-145",
-    year: 2022,
-    link: "https://example.com/bookchapter1",
-    googleScholarId: "GHI789",
-    orcidId: "0000-0001-2345-6791",
-  },
-  {
-    title: "Conservation Strategies for Vulnerable Forest Species",
-    authors: "Smith, J., Miller, S., Thompson, J.",
-    book: "Biodiversity Conservation in the Anthropocene",
-    editors: "Wilson, A., Brown, D.",
-    publisher: "Springer, New York",
-    pages: "211-230",
-    year: 2021,
-    link: "https://example.com/bookchapter2",
-    // No IDs for this publication
-  },
 ]
 
 export const conferences: Conference[] = [
   {
-    title: "Monitoring forest biodiversity using remote sensing techniques",
-    authors: "Smith, J., Davis, R.",
-    conference: "International Conference on Ecology and Conservation",
-    location: "Barcelona, Spain",
-    date: "June 15-18, 2023",
-    link: "https://example.com/conference1",
-    googleScholarId: "JKL012",
+    title: "Rol del fósforo sobre la defensa anti-herbivoría provista por hongos endófitos.",
+    authors: "Decunta, Facundo Alcides; Graff, Pamela; Pérez, Ignacio; Gundel, Pedro Emilio",
+    conference: "Reunion Argentina de Ecología XXIX",
+    location: "Tucumán, Argentina",
+    date: "2021",
+    link: "",
   },
   {
-    title: "Adaptive management approaches for forest conservation",
-    authors: "Smith, J., Wilson, T., Brown, C.",
-    conference: "Annual Meeting of the Ecological Society of America",
-    location: "Portland, OR, USA",
-    date: "August 7-12, 2022",
-    link: "https://example.com/conference2",
-    orcidId: "0000-0001-2345-6792",
+    title: "Eficiencia de Remoción de N en un Humedal Artificial de Flujo Vertical a Escala de Laboratorio.",
+    authors: "Arakaki, Nicolas Kenji; Arreghini, Silvana; Serafini, Roberto; Weigandt, Cristian; Auguet, Silvana; Arnedillo, Gonzalo, Decunta, Facundo Alcides; Iorio, Alicia Fabricio de.",
+    conference: "Congreso Aguas, Ambiente y Energías 2017. Asociación de Universidades Grupo Montevideo y Universidad de Cuyo",
+    location: "Mendoza, Argentina",
+    date: "2017",
+    link: "",
   },
   {
-    title: "Citizen science contributions to long-term ecological monitoring",
-    authors: "Smith, J., Garcia, M.",
-    conference: "European Congress of Conservation Biology",
-    location: "Prague, Czech Republic",
-    date: "September 3-6, 2021",
-    link: "https://example.com/conference3",
-    // No IDs for this publication
+    title: "Rol de los humedales en el ciclado del Nitrógeno.",
+    authors: "Arakaki, Nicolas Kenji; Arreghini, Silvana; Serafini, Roberto; Auguet, Silvana; Arnedillo, Gonzalo, Decunta, Facundo Alcides; Iorio, Alicia Fabricio de.",
+    conference: "IX Congreso de Ecología y Manejo de Ecosistemas Acuáticos Pampeanos",
+    location: "La Plata, Argentina",
+    date: "2017",
+    link: "",
   },
 ]
 
