@@ -2,51 +2,88 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, MapPin, Mail, ArrowRight } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
 import { GoogleScholarIcon } from "@/components/icons/google-scholar-icon"
 import { OrcidIcon } from "@/components/icons/orcid-icon"
+import { useEffect } from "react"
 
 export default function Home() {
-  return <HomeContent />
-}
+  const { t, language } = useLanguage()
 
-function HomeContent() {
-  const { t } = useLanguage()
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = language
+    }
+  }, [language])
 
   return (
-    <div>
+    <div className="space-y-20">
       {/* Hero Section */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div className="md:col-span-7 space-y-6">
-              <p className="text-mono-500 mb-2">{t("phd_title")}</p>
-              <h1 className="text-4xl md:text-5xl font-medium mb-4">{t("dr_title")}</h1>
-              <p className="text-lg text-mono-600 mb-8">{t("short_intro")}</p>
-
-              <div className="flex flex-wrap gap-4">
+        <div className="container-medium">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2 space-y-6">
+              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">{t("phd_title")}</p>
+              <h1 className="text-4xl font-medium tracking-tight">{t("dr_title")}</h1>
+              <p className="text-lg text-muted-foreground">{t("short_intro")}</p>
+              <div className="flex flex-wrap gap-4 pt-2">
                 <Link href="/about">
-                  <Button className="bg-mono-900 hover:bg-mono-800 text-white">
+                  <Button className="group">
                     {t("about_me")}
-                    <ArrowRight size={16} className="ml-2" />
+                    <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
                 <Link href="/publications">
-                  <Button variant="outline" className="border-mono-200 hover:bg-mono-100">
-                    {t("view_publications")}
-                  </Button>
+                  <Button variant="outline">{t("view_publications")}</Button>
                 </Link>
               </div>
+
+              {/* Social Media Buttons */}
+              <div className="pt-6">
+                <h3 className="text-sm font-medium uppercase tracking-wider text-muted-foreground mb-3">Connect</h3>
+                <div className="flex flex-wrap gap-3">
+                  <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="h-10">
+                      <Github size={16} className="mr-2" />
+                      GitHub
+                    </Button>
+                  </Link>
+                  <Link href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="h-10">
+                      <GoogleScholarIcon className="h-4 w-4 mr-2" />
+                      Google Scholar
+                    </Button>
+                  </Link>
+                  <Link href="https://orcid.org" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="h-10">
+                      <OrcidIcon className="h-4 w-4 mr-2" />
+                      ORCID
+                    </Button>
+                  </Link>
+                  <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="h-10">
+                      <Linkedin size={16} className="mr-2" />
+                      LinkedIn
+                    </Button>
+                  </Link>
+                  <Link href="mailto:jane.smith@university.edu">
+                    <Button variant="outline" size="sm" className="h-10">
+                      <Mail size={16} className="mr-2" />
+                      Email
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="md:col-span-5">
-              <div className="relative aspect-square max-w-md mx-auto">
+            <div className="md:w-1/2">
+              <div className="relative aspect-square max-w-sm mx-auto">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/placeholder.svg?height=400&width=400"
                   alt="Profile Photo"
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-lg"
                   priority
                 />
               </div>
@@ -56,46 +93,16 @@ function HomeContent() {
       </section>
 
       {/* Contact Info Section */}
-      <section className="py-12 border-t border-b">
-        <div className="container mx-auto">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <MapPin size={18} className="text-mono-500 flex-shrink-0" />
-                  <span className="text-mono-600">{t("department")}, {t("university")}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail size={18} className="text-mono-500 flex-shrink-0" />
-                  <span className="text-mono-600">fdecunta@agro.uba.ar</span>
-                </div>
+      <section className="py-12 bg-muted/50">
+        <div className="container-medium">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div className="space-y-2">
+              <h2 className="text-xl font-medium mb-4">Contact Information</h2>
+              <div className="flex items-center gap-2">
+                <p className="text-muted-foreground">Department of Ecology, {t("university")}, Seattle, WA 98195</p>
               </div>
-
-              <div className="flex flex-wrap gap-3">
-                <Link href="https://github.com/fdecunta" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
-                    <Github size={16} className="mr-2" />
-                    GitHub
-                  </Button>
-                </Link>
-                <Link href="https://scholar.google.co.in/citations?user=ZuiT7QMAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
-                    <GoogleScholarIcon className="h-4 w-4 mr-2" />
-                    Google Scholar
-                  </Button>
-                </Link>
-                <Link href="https://orcid.org/0009-0004-5774-1085" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
-                    <OrcidIcon className="h-4 w-4 mr-2" />
-                    ORCID
-                  </Button>
-                </Link>
-                <Link href="https://www.linkedin.com/in/facundo-decunta-06ba39291/" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="sm" className="border-mono-200 hover:bg-mono-100">
-                    <Linkedin size={16} className="mr-2" />
-                    LinkedIn
-                  </Button>
-                </Link>
+              <div className="flex items-center gap-2">
+                <p className="text-muted-foreground">jane.smith@university.edu</p>
               </div>
             </div>
           </div>

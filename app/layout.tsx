@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/language-context"
-import { Navigation } from "@/components/navigation"
+import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 // Font setup - using only one font for simplicity
@@ -15,9 +15,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Facundo Decunta site",
+  title: "Dr. Jane Smith | Ecology Researcher",
   description:
-    "Personal website of Facundo Decunta",
+    "Personal website of Dr. Jane Smith, PhD in Ecology specializing in forest ecosystem dynamics and climate change impacts.",
     generator: 'v0.dev'
 }
 
@@ -31,12 +31,8 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <LanguageProvider>
-            <header className="sticky top-0 z-40 border-b bg-background">
-              <div className="container mx-auto">
-                <Navigation />
-              </div>
-            </header>
-            <main className="flex-1">{children}</main>
+            <Header />
+            <main className="flex-1 page-transition">{children}</main>
             <Footer />
           </LanguageProvider>
         </ThemeProvider>

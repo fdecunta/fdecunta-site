@@ -28,11 +28,11 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
+    --border: 0 0% 92%;
     --input: 0 0% 90%;
     --ring: 0 0% 80%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
   }
 
   .dark {
@@ -84,21 +84,71 @@
   }
 }
 
-/* Minimal animations */
-.fade-in {
-  animation: fadeIn 0.3s ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* Smooth transitions */
+.page-transition {
+  @apply transition-all duration-300 ease-in-out;
 }
 
 /* Improved focus styles */
 :focus-visible {
   @apply outline-none ring-2 ring-primary ring-offset-2;
+}
+
+/* Typography improvements */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-medium text-foreground;
+}
+
+.prose p,
+.prose li {
+  @apply text-muted-foreground;
+}
+
+.prose a {
+  @apply text-foreground font-medium hover:text-muted-foreground transition-colors no-underline;
+}
+
+.prose blockquote {
+  @apply border-l-2 border-muted pl-4 italic;
+}
+
+.prose code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-muted p-4 rounded-lg overflow-x-auto;
+}
+
+.prose img {
+  @apply rounded-lg;
+}
+
+.prose table {
+  @apply w-full border-collapse;
+}
+
+.prose thead {
+  @apply bg-muted;
+}
+
+.prose th,
+.prose td {
+  @apply p-2 border border-border;
+}
+
+/* Container width constraints */
+.container-narrow {
+  @apply max-w-3xl mx-auto px-4 sm:px-6;
+}
+
+.container-medium {
+  @apply max-w-4xl mx-auto px-4 sm:px-6;
+}
+
+.container-wide {
+  @apply max-w-6xl mx-auto px-4 sm:px-6;
 }

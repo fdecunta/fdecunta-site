@@ -18,13 +18,14 @@ export function Navigation() {
     { href: "/", label: t("home") },
     { href: "/about", label: t("about") },
     { href: "/publications", label: t("publications") },
+    { href: "/blog", label: t("blog") },
     { href: "/gallery", label: t("gallery") },
   ]
 
   return (
     <nav className="flex items-center justify-between py-4">
       <Link href="/" className="text-lg font-medium">
-        Facundo Decunta
+        Jane Smith
       </Link>
 
       {/* Mobile menu button */}

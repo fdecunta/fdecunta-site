@@ -39,40 +39,66 @@ export interface Conference {
 
 export const publications: Publication[] = [
   {
-    title: "An appraisal of the protection conferred by foliar Epichloë endophytes against root herbivores in plants: A meta-analysis",
-    authors: "Decunta, F.A., Gundel, P.E., Bastías, D.A.",
-    journal: "Fungal Biology Reviews",
-    volume: "52",
-    pages: "100428",
-    year: 2025,
-    doi: "10.1016/j.fbr.2025.100428",
-    link: "https://doi.org/10.1016/j.fbr.2025.100428",
+    title: "Climate-driven shifts in forest composition across temperate regions",
+    authors: "Smith, J., Johnson, A., Williams, B.",
+    journal: "Journal of Ecology",
+    volume: "111(3), 567-582",
+    pages: "567-582",
+    year: 2023,
+    doi: "10.1111/jec.13579",
+    link: "https://example.com/publication1",
+    googleScholarId: "ABC123", // Example ID
+    orcidId: "0000-0001-2345-6789", // Example ID
   },
   {
-    title: "Foliar phosphorus concentration modulates the defensive mutualism of an endophytic fungus in a perennial host grass",
-    authors: "Decunta, F.A., Pérez, L.I., Graff, P., Gundel, P.E.",
-    journal: "Functional Ecology",
-    volume: "38(9)",
-    pages: "2041-2053",
-    year: 2024,
-    doi: "10.1111/1365-2435.14616",
-    link: "https://doi.org/10.1111/1365-2435.14616",
+    title: "Long-term monitoring reveals biodiversity loss in protected areas",
+    authors: "Smith, J., Brown, C., Davis, E.",
+    journal: "Conservation Biology",
+    volume: "36(2)",
+    pages: "234-248",
+    year: 2022,
+    doi: "10.1111/cobi.13821",
+    link: "https://example.com/publication2",
+    googleScholarId: "DEF456", // Only Google Scholar ID
   },
   {
-    title: "A Systematic Review on the Effects of Epichloë Fungal Endophytes on Drought Tolerance in Cool-Season Grasses",
-    authors: "Decunta, F.A., Pérez, L.I., Malinowski, D.P., Molina-Montenegro, M.A., Gundel, P.E.",
-    journal: "Frontiers in Plant Science",
-    volume: "12",
-    pages: "644731",
+    title: "Ecological resilience of forest ecosystems under climate change",
+    authors: "Smith, J., Garcia, M., Wilson, T.",
+    journal: "Nature Ecology & Evolution",
+    volume: "5(8)",
+    pages: "1043-1052",
     year: 2021,
-    doi: "10.3389/fpls.2021.644731",
-    link: "https://doi.org/10.3389/fpls.2021.644731",
+    doi: "10.1038/s41559-021-01485-1",
+    link: "https://example.com/publication3",
+    orcidId: "0000-0001-2345-6790", // Only ORCID ID
+  },
+  {
+    title: "Impacts of drought on understory plant communities in temperate forests",
+    authors: "Smith, J., Taylor, R.",
+    journal: "Plant Ecology",
+    volume: "217(4)",
+    pages: "401-413",
+    year: 2020,
+    doi: "10.1007/s11258-020-01018-z",
+    link: "https://example.com/publication4",
+    // No IDs for this publication
+  },
+  {
+    title: "Soil microbial diversity as an indicator of forest health",
+    authors: "Johnson, K., Smith, J., Lee, P.",
+    journal: "Soil Biology and Biochemistry",
+    volume: "142",
+    pages: "107-118",
+    year: 2020,
+    doi: "10.1016/j.soilbio.2019.12.008",
+    link: "https://example.com/publication5",
+    // No IDs for this publication
   },
 ]
 
 export const bookChapters: BookChapter[] = [
   {
-    title: "PLACE holder :D",
+    title: "Forest Ecosystem Responses to Climate Change",
     authors: "Smith, J., Anderson, L.",
     book: "Climate Change and Terrestrial Ecosystems",
     editors: "Roberts, M., Chen, W.",
@@ -81,18 +107,48 @@ export const bookChapters: BookChapter[] = [
     year: 2022,
     link: "https://example.com/bookchapter1",
     googleScholarId: "GHI789",
+    orcidId: "0000-0001-2345-6791",
+  },
+  {
+    title: "Conservation Strategies for Vulnerable Forest Species",
+    authors: "Smith, J., Miller, S., Thompson, J.",
+    book: "Biodiversity Conservation in the Anthropocene",
+    editors: "Wilson, A., Brown, D.",
+    publisher: "Springer, New York",
+    pages: "211-230",
+    year: 2021,
+    link: "https://example.com/bookchapter2",
+    // No IDs for this publication
   },
 ]
 
 export const conferences: Conference[] = [
   {
-    title: "This is not real, is a palce holder",
+    title: "Monitoring forest biodiversity using remote sensing techniques",
     authors: "Smith, J., Davis, R.",
     conference: "International Conference on Ecology and Conservation",
     location: "Barcelona, Spain",
     date: "June 15-18, 2023",
     link: "https://example.com/conference1",
     googleScholarId: "JKL012",
+  },
+  {
+    title: "Adaptive management approaches for forest conservation",
+    authors: "Smith, J., Wilson, T., Brown, C.",
+    conference: "Annual Meeting of the Ecological Society of America",
+    location: "Portland, OR, USA",
+    date: "August 7-12, 2022",
+    link: "https://example.com/conference2",
+    orcidId: "0000-0001-2345-6792",
+  },
+  {
+    title: "Citizen science contributions to long-term ecological monitoring",
+    authors: "Smith, J., Garcia, M.",
+    conference: "European Congress of Conservation Biology",
+    location: "Prague, Czech Republic",
+    date: "September 3-6, 2021",
+    link: "https://example.com/conference3",
+    // No IDs for this publication
   },
 ]
 

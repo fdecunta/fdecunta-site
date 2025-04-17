@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState, type ReactNode } from "react"
+import { createContext, useContext, useState, type ReactNode, useEffect } from "react"
 
 type Language = "en" | "es"
 
@@ -13,7 +13,31 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en")
+  const [language, setLanguage] = useState<Language>(() => {
+    // This will only run on the client side
+    if (typeof window !== "undefined") {
+      const browserLang = navigator.language.toLowerCase()
+      return browserLang.startsWith("es") ? "es" : "en"
+    }
+    return "en" // Default to English on server-side
+  })
+
+  useEffect(() => {
+    // Check if there's a stored language preference
+    if (typeof window !== "undefined") {
+      const storedLanguage = localStorage.getItem("preferredLanguage") as Language | null
+      if (storedLanguage && (storedLanguage === "en" || storedLanguage === "es")) {
+        setLanguage(storedLanguage)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    // Store language preference in localStorage
+    if (typeof window !== "undefined") {
+      localStorage.setItem("preferredLanguage", language)
+    }
+  }, [language])
 
   // Translation function
   const t = (key: string): string => {
@@ -41,9 +65,9 @@ const translations = {
     gallery: "Gallery",
 
     // Home page
-    dr_title: "Facundo Decunta",
-    phd_title: "PhD candidate in Ecology",
-    short_intro: "Specializing in plant interactions with symbiotic microorganisms and insect herbivores, also interested in statistics and programming.",
+    dr_title: "Dr. Jane Smith",
+    phd_title: "PhD in Ecology",
+    short_intro: "Ecologist specializing in forest ecosystem dynamics and climate change impacts.",
     about_me: "About Me",
     view_publications: "Publications",
     photo_gallery: "Photo Gallery",
@@ -53,11 +77,11 @@ const translations = {
 
     // About page
     bio_title: "Biography",
-    bio: "This is my bio",
+    bio: "I am an ecologist specializing in forest ecosystem dynamics and climate change impacts. My research focuses on understanding how forest communities respond to environmental changes and developing conservation strategies for vulnerable ecosystems.",
     bio_extended:
-      "This is my bio extended",
+      "With over 8 years of experience in ecological research, I have conducted fieldwork across diverse forest ecosystems in North America and Europe. My work combines traditional ecological methods with advanced remote sensing and data science approaches to understand complex ecosystem processes at multiple scales.",
     bio_additional:
-      "This is my bio additional",
+      "I am passionate about communicating science to diverse audiences and engaging communities in conservation efforts. My research has been published in leading ecological journals and presented at international conferences. I collaborate with various conservation organizations and government agencies to translate research findings into practical conservation strategies. When not in the field or lab, I enjoy hiking, wildlife photography, and volunteering for local environmental education programs.",
 
     // Publications page
     journal_articles: "Journal Articles",
@@ -68,15 +92,27 @@ const translations = {
     view_proceedings: "View Proceedings",
 
     // Gallery page
-    research_fieldwork: "Research",
+    research_fieldwork: "Research & Fieldwork",
     personal: "Personal",
 
     // Contact information
     address: "Address",
     email: "Email",
-    university: "IFEVA - Faculty of Agronomy, University of Buenos Aires",
-    department: "Department of Quantitative Methods And Information Systems",
+    university: "University of Environmental Sciences",
     all_rights_reserved: "All rights reserved.",
+
+    // Add to the en translations
+    blog: "Blog",
+    blog_title: "Blog",
+    blog_description: "Thoughts, research updates, and field notes",
+    read_post: "Read Post",
+    published_on: "Published on",
+    minutes_read: "min read",
+    back_to_blog: "Back to Blog",
+    categories: "Categories",
+    tags: "Tags",
+    recent_posts: "Recent Posts",
+    no_posts: "No posts available yet.",
   },
   es: {
     // Navigation
@@ -86,9 +122,9 @@ const translations = {
     gallery: "Galería",
 
     // Home page
-    dr_title: "Facundo Decunta",
-    phd_title: "Estudiante de Doctorado",
-    short_intro: "Enfocado en las interacciones entre plantas, microorganismos simbióticos y herbívoros insectos, con interés en la estadística y la programación",
+    dr_title: "Dra. Jane Smith",
+    phd_title: "Doctorado en Ecología",
+    short_intro: "Ecóloga especializada en la dinámica de ecosistemas forestales y los impactos del cambio climático.",
     about_me: "Sobre Mí",
     view_publications: "Publicaciones",
     photo_gallery: "Galería de Fotos",
@@ -98,11 +134,11 @@ const translations = {
 
     // About page
     bio_title: "Biografía",
-    bio: "Mi bio",
+    bio: "Soy ecóloga especializada en la dinámica de ecosistemas forestales y los impactos del cambio climático. Mi investigación se centra en comprender cómo las comunidades forestales responden a los cambios ambientales y en desarrollar estrategias de conservación para ecosistemas vulnerables.",
     bio_extended:
-      "Mi bio extendida",
+      "Con más de 8 años de experiencia en investigación ecológica, he realizado trabajo de campo en diversos ecosistemas forestales de América del Norte y Europa. Mi trabajo combina métodos ecológicos tradicionales con enfoques avanzados de teledetección y ciencia de datos para comprender procesos ecosistémicos complejos a múltiples escalas.",
     bio_additional:
-      "Mi bio adicional",
+      "Me apasiona comunicar la ciencia a diversas audiencias e involucrar a las comunidades en los esfuerzos de conservación. Mi investigación ha sido publicada en importantes revistas ecológicas y presentada en conferencias internacionales. Colaboro con varias organizaciones de conservación y agencias gubernamentales para traducir los resultados de la investigación en estrategias prácticas de conservación. Cuando no estoy en el campo o en el laboratorio, disfruto de caminatas, fotografía de vida silvestre y voluntariado en programas locales de educación ambiental.",
 
     // Publications page
     journal_articles: "Artículos de Revistas",
@@ -113,14 +149,26 @@ const translations = {
     view_proceedings: "Ver Actas",
 
     // Gallery page
-    research_fieldwork: "Investigación",
+    research_fieldwork: "Investigación y Trabajo de Campo",
     personal: "Personal",
 
     // Contact information
     address: "Dirección",
     email: "Correo Electrónico",
-    university: "IFEVA - Facultad de Agronomía, Universidad de Buenos Aires",
-    department: "Departamento de Métodos Cuantitativos y Sistemas de Información",
+    university: "Universidad de Ciencias Ambientales",
     all_rights_reserved: "Todos los derechos reservados.",
+
+    // Add to the es translations
+    blog: "Blog",
+    blog_title: "Blog",
+    blog_description: "Pensamientos, actualizaciones de investigación y notas de campo",
+    read_post: "Leer Publicación",
+    published_on: "Publicado el",
+    minutes_read: "min de lectura",
+    back_to_blog: "Volver al Blog",
+    categories: "Categorías",
+    tags: "Etiquetas",
+    recent_posts: "Publicaciones Recientes",
+    no_posts: "Aún no hay publicaciones disponibles.",
   },
 }

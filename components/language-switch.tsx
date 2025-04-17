@@ -11,13 +11,9 @@ export function LanguageSwitch() {
   }
 
   return (
-    <Button
-      variant="outline"
-      size="sm"
-      onClick={toggleLanguage}
-      className="text-sm font-medium h-8 border-mono-200 hover:bg-mono-100"
-    >
-      {language === "en" ? "ES" : "EN"}
+    <Button variant="ghost" size="sm" onClick={toggleLanguage} className="h-8 px-2 rounded-md flex items-center gap-1">
+      <span className="text-sm font-medium">{language === "en" ? "English" : "Español"}</span>
+      <span className="text-xs text-muted-foreground">({language === "en" ? "ES" : "EN"})</span>
     </Button>
   )
 }
