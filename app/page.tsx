@@ -80,7 +80,7 @@ export default function Home() {
             <div className="md:w-1/2">
               <div className="relative aspect-square max-w-sm mx-auto">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/me.jpg?height=400&width=400"
                   alt="Profile Photo"
                   fill
                   className="object-cover rounded-lg"
