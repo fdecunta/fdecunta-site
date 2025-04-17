@@ -68,7 +68,7 @@ export default function Home() {
                       LinkedIn
                     </Button>
                   </Link>
-                  <Link href="mailto:fdecunta@agro.uba.ar>
+                  <Link href="mailto:fdecunta@agro.uba.ar">
                     <Button variant="outline" size="sm" className="h-10">
                       <Mail size={16} className="mr-2" />
                       Email
