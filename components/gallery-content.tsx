@@ -1,16 +1,44 @@
 "use client"
 
-import type React from "react"
-
-import { useState, useRef, useEffect } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import Image from "next/image"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog"
+import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { useLanguage } from "@/contexts/language-context"
 import { ZoomIn, ZoomOut, X, Maximize2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { Card, CardContent } from "@/components/ui/card"
+
+// Minimal Tabs implementation
+function SimpleTabs({ tabs, children }: { tabs: { label: string; value: string }[]; children: React.ReactNode }) {
+  const [active, setActive] = useState(tabs[0].value);
+  return (
+    <div className="w-full">
+      <div className="w-full flex justify-center mb-8 bg-transparent border-b rounded-none">
+        {tabs.map((tab) => (
+          <button
+            key={tab.value}
+            className={`px-4 py-2 text-lg focus:outline-none ${active === tab.value ? "border-b-2 border-primary text-primary" : "text-muted-foreground"}`}
+            onClick={() => setActive(tab.value)}
+            aria-selected={active === tab.value}
+            role="tab"
+            type="button"
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+      <div>
+        {React.Children.map(children, (child) => {
+          if (React.isValidElement(child) && typeof child.props["data-label"] === "string") {
+            return child.props["data-label"] === active ? React.cloneElement(child) : null;
+          }
+          return null;
+        })}
+      </div>
+    </div>
+  );
+}
 
 export function GalleryContent() {
   const { t } = useLanguage()
@@ -183,70 +211,64 @@ export function GalleryContent() {
       {/* Content */}
       <section>
         <div className="container-wide">
-          <Tabs defaultValue="research" className="w-full">
-            <TabsList className="w-full flex justify-center mb-8 bg-transparent border-b rounded-none">
-              <TabsTrigger
-                value="research"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-foreground data-[state=active]:bg-transparent rounded-none px-6 py-2 bg-transparent text-muted-foreground data-[state=active]:text-foreground"
-              >
-                {t("research_fieldwork")}
-              </TabsTrigger>
-              <TabsTrigger
-                value="personal"
-                className="data-[state=active]:border-b-2 data-[state=active]:border-foreground data-[state=active]:bg-transparent rounded-none px-6 py-2 bg-transparent text-muted-foreground data-[state=active]:text-foreground"
-              >
-                {t("personal")}
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="research" className="mt-6">
+          <SimpleTabs
+            tabs={[{ label: t("gallery.researchTab"), value: "research" }, { label: t("gallery.personalTab"), value: "personal" }]}
+          >
+            <div data-label="research" className="mt-6">
+              {/* Research images grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {researchImages.map((image, index) => (
                   <Card
                     key={index}
-                    className="overflow-hidden cursor-pointer transition-transform hover:scale-[1.02] duration-300"
+                    className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
                     onClick={() => openImageDialog(image)}
                   >
-                    <div className="relative h-64 w-full">
-                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-200 flex items-center justify-center">
-                        <ZoomIn className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    <CardContent className="p-0">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={400}
+                        height={300}
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="p-4">
+                        <div className="font-semibold text-lg mb-1">{image.title}</div>
+                        <div className="text-muted-foreground text-sm mb-2">{image.location}</div>
+                        <div className="text-sm">{image.description}</div>
                       </div>
-                    </div>
-                    <CardContent className="p-4">
-                      <h3 className="font-medium text-lg mb-1">{image.title}</h3>
-                      <p className="text-muted-foreground text-sm mb-2">{image.location}</p>
-                      <p className="text-sm text-muted-foreground">{image.description}</p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
-            </TabsContent>
-
-            <TabsContent value="personal" className="mt-6">
+            </div>
+            <div data-label="personal" className="mt-6">
+              {/* Personal images grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {personalImages.map((image, index) => (
                   <Card
                     key={index}
-                    className="overflow-hidden cursor-pointer transition-transform hover:scale-[1.02] duration-300"
+                    className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
                     onClick={() => openImageDialog(image)}
                   >
-                    <div className="relative h-64 w-full">
-                      <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
-                      <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition-all duration-200 flex items-center justify-center">
-                        <ZoomIn className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    <CardContent className="p-0">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={400}
+                        height={300}
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="p-4">
+                        <div className="font-semibold text-lg mb-1">{image.title}</div>
+                        <div className="text-muted-foreground text-sm mb-2">{image.location}</div>
+                        <div className="text-sm">{image.description}</div>
                       </div>
-                    </div>
-                    <CardContent className="p-4">
-                      <h3 className="font-medium text-lg mb-1">{image.title}</h3>
-                      <p className="text-muted-foreground text-sm mb-2">{image.location}</p>
-                      <p className="text-sm text-muted-foreground">{image.description}</p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
-            </TabsContent>
-          </Tabs>
+            </div>
+          </SimpleTabs>
         </div>
       </section>
 
@@ -330,12 +352,10 @@ export function GalleryContent() {
                   <Maximize2 className="h-5 w-5" />
                   <span className="sr-only">Reset zoom</span>
                 </Button>
-                <DialogClose asChild>
-                  <Button variant="outline" size="icon" className="h-9 w-9 ml-2" onClick={closeImageDialog}>
-                    <X className="h-5 w-5" />
-                    <span className="sr-only">Close</span>
-                  </Button>
-                </DialogClose>
+                <Button variant="outline" size="icon" onClick={closeImageDialog} className="h-9 w-9 ml-2">
+                  <X className="h-5 w-5" />
+                  <span className="sr-only">Close</span>
+                </Button>
               </div>
             </div>
           </div>

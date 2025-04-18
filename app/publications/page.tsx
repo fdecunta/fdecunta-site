@@ -1,3 +1,4 @@
+"use client";
 import { PublicationsContent } from "@/components/publications-content"
 
 export default function Publications() {
