@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
+import ReactMarkdown from "react-markdown"
 
 export function AboutContent() {
   const { t } = useLanguage()
@@ -37,9 +38,16 @@ export function AboutContent() {
               <div className="prose max-w-none">
                 <h2 className="text-xl font-medium mb-6">{t("bio_title")}</h2>
                 <div className="space-y-6">
-                  <p className="text-muted-foreground leading-relaxed">{t("bio")}</p>
-                  <p className="text-muted-foreground leading-relaxed">{t("bio_extended")}</p>
-                  <p className="text-muted-foreground leading-relaxed">{t("bio_additional")}</p>
+                  {/* The following sections support Markdown formatting */}
+                  <div className="text-muted-foreground leading-relaxed">
+                    <ReactMarkdown>{t("bio")}</ReactMarkdown>
+                  </div>
+                  <div className="text-muted-foreground leading-relaxed">
+                    <ReactMarkdown>{t("bio_extended")}</ReactMarkdown>
+                  </div>
+                  <div className="text-muted-foreground leading-relaxed">
+                    <ReactMarkdown>{t("bio_additional")}</ReactMarkdown>
+                  </div>
                 </div>
               </div>
             </div>
