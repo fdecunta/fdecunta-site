@@ -77,9 +77,9 @@ const translations = {
 
     // About page
     bio_title: "Biography",
-    bio: "This is my bio",
+    bio: "My name is Facundo Alcides Decunta. I am from Chivilcoy, a small town in Buenos Aires, Argentina. I studied Environmental Science at the University of Buenos Aires and graduated in 2021. That same year, I started my PhD program at the Faculty of Agronomy at the University of Buenos Aires.",
     bio_extended:
-      "This is my bio expended",
+      "This is my bio expended. This is a [link](https://github.com/fdecunta/) to an external website.",
     bio_additional:
       "This is my bio additional",
 
