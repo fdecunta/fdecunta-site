@@ -91,8 +91,6 @@ I was an assistant teacher in the Ecology Department at the Faculty of Agronomy,
 
 ## Programming
 
-I like to write small tools that I need or that I think would be nice to have, and also because it is fun.
-
 Most of my useful coding is done in R, as it is the language we use for statistics in ecology. I mostly write R code for data analysis, but I have also worked a bit with R packages. I contributed to [orchaRd](https://github.com/daniel1noble/orchaRd/), a package used for meta-analysis, by writing a couple of functions for conducting and plotting leave-one-out analyses.
 
 My other programming work is related to small personal projects. I like to write small tools for very specific problems, or just try to build something and see if it works. For this non-work programming, I usually use Python, but I have also done some C, Go, and written lots of small Bash scripts.
@@ -103,8 +101,7 @@ My other programming work is related to small personal projects. I like to write
 I am vegan. Many people can decide every day what to eat. Some food options require animals to suffer and be killed; some options don't. Whenever possible, choose the latter. Nobody should pay for a product that requires suffering and pain to be produced. Also, veganism is a win-win-win : it is good for your health, good for the environment, and good for the animals ([Tilman & Clark, 2014](https://doi.org/10.1038/nature13959); [Clark et al. 2018](https://doi.org/10.1146/annurev-environ-102017-025957); [Clark et al. 2019](https://doi.org/10.1073/pnas.1906908116); [Scherer et al. 2019](https://doi.org/10.1016/j.oneear.2019.10.020)).
 
 `,
-    bio_additional:
-      "",
+
 
     // Publications page
     journal_articles: "Journal Articles",
@@ -171,8 +168,6 @@ Fui ayudante de cátedra en el Departamento de Ecología de la Facultad de Agron
 
 ## Programación
 
-Me gusta escribir pequeñas herramientas que necesito o que creo que sería bueno tener, y también porque es divertido.
-
 La mayor parte de mi programación útil la hago en R, porque es el lenguaje que usamos para análisis estadísticos en ecología. Principalmente escribo código en R para análisis de datos, pero también he trabajado un poco con paquetes de R. Contribuí a [orchaRd](https://github.com/daniel1noble/orchaRd/), un paquete utilizado para meta-análisis, escribiendo un par de funciones para realizar y graficar análisis leave-one-out.
 
 Mi otro trabajo de programación está relacionado con pequeños proyectos personales. Me gusta escribir herramientas para problemas muy específicos, o simplemente intentar construir algo y ver si funciona. Para esta programación no laboral, usualmente uso Python, pero también he hecho algo de C, Go y he escrito muchos scripts pequeños en Bash.
@@ -181,8 +176,7 @@ Mi otro trabajo de programación está relacionado con pequeños proyectos perso
 
 Soy vegano. Muchas personas pueden elegir qué comer. Algunas opciones requieren que los animales sufran y sean sacrificados; otras no. Siempre que sea posible, elige la segunda opción. Nadie debería pagar por un producto que requiere sufrimiento y dolor para ser producido. Además, el veganismo es un win-win-win: es bueno para tu salud, bueno para el ambiente y bueno para los animales ([Tilman & Clark, 2014](https://doi.org/10.1038/nature13959); [Clark et al. 2018](https://doi.org/10.1146/annurev-environ-102017-025957); [Clark et al. 2019](https://doi.org/10.1073/pnas.1906908116); [Scherer et al. 2019](https://doi.org/10.1016/j.oneear.2019.10.020)).
 `,
-    bio_additional:
-      "",
+
 
     // Publications page
     journal_articles: "Artículos de Revistas",

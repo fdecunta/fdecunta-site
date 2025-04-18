@@ -45,9 +45,7 @@ export function AboutContent() {
                   <div className="text-muted-foreground leading-relaxed">
                     <ReactMarkdown>{t("bio_extended")}</ReactMarkdown>
                   </div>
-                  <div className="text-muted-foreground leading-relaxed">
-                    <ReactMarkdown>{t("bio_additional")}</ReactMarkdown>
-                  </div>
+
                 </div>
               </div>
             </div>
