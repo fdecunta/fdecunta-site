@@ -100,7 +100,7 @@ My other programming work is related to small personal projects. I like to write
 
 ## Veganism
 
-I am vegan. Many people can decide every day what to eat. Some food options require animals to suffer and be killed; some options don't. Whenever possible, choose the latter. Nobody should pay for a product that requires suffering and pain to be produced. Also, veganism is a win-win-win : it is good for your health, good for the environment, and good for the animals ([Tilman & Clark, 2014](https://doi.org/10.1038/nature13959); [Clark et al. 2018](https://doi.org/10.1038/nature13959); [Clark et al. 2019](https://doi.org/10.1038/nature13959); [Scherer et al. 2019](https://doi.org/10.1038/nature13959)).
+I am vegan. Many people can decide every day what to eat. Some food options require animals to suffer and be killed; some options don't. Whenever possible, choose the latter. Nobody should pay for a product that requires suffering and pain to be produced. Also, veganism is a win-win-win : it is good for your health, good for the environment, and good for the animals ([Tilman & Clark, 2014](https://doi.org/10.1038/nature13959); [Clark et al. 2018](https://doi.org/10.1146/annurev-environ-102017-025957); [Clark et al. 2019](https://doi.org/10.1073/pnas.1906908116); [Scherer et al. 2019](https://doi.org/10.1016/j.oneear.2019.10.020)).
 
 `,
     bio_additional:
@@ -179,7 +179,7 @@ Mi otro trabajo de programación está relacionado con pequeños proyectos perso
 
 ## Veganismo
 
-Soy vegano. Muchas personas pueden decidir qué comer. Algunas opciones alimenticias requieren que los animales sufran y sean sacrificados; otras no. Siempre que sea posible, elige la segunda opción. Nadie debería pagar por un producto que requiere sufrimiento y dolor para ser producido. Además, el veganismo es un win-win-win: es bueno para tu salud, bueno para el ambiente y bueno para los animales ([Tilman & Clark, 2014](https://doi.org/10.1038/nature13959); [Clark et al. 2018](https://doi.org/10.1038/nature13959); [Clark et al. 2019](https://doi.org/10.1038/nature13959); [Scherer et al. 2019](https://doi.org/10.1038/nature13959)).
+Soy vegano. Muchas personas pueden elegir qué comer. Algunas opciones requieren que los animales sufran y sean sacrificados; otras no. Siempre que sea posible, elige la segunda opción. Nadie debería pagar por un producto que requiere sufrimiento y dolor para ser producido. Además, el veganismo es un win-win-win: es bueno para tu salud, bueno para el ambiente y bueno para los animales ([Tilman & Clark, 2014](https://doi.org/10.1038/nature13959); [Clark et al. 2018](https://doi.org/10.1146/annurev-environ-102017-025957); [Clark et al. 2019](https://doi.org/10.1073/pnas.1906908116); [Scherer et al. 2019](https://doi.org/10.1016/j.oneear.2019.10.020)).
 `,
     bio_additional:
       "",
