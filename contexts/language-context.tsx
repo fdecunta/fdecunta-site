@@ -79,7 +79,29 @@ const translations = {
     bio_title: "Biography",
     bio: "My name is Facundo Alcides Decunta. I am from Chivilcoy, a small town in Buenos Aires, Argentina. I studied Environmental Science at the University of Buenos Aires and graduated in 2021. That same year, I started my PhD program at the Faculty of Agronomy at the University of Buenos Aires.",
     bio_extended:
-      "This is my bio expended. This is a [link](https://github.com/fdecunta/) to an external website.",
+      `
+## Research
+
+I study how plants interact with symbiotic microorganisms and insect herbivores. My study model is the symbiosis between cool-season grasses and Epichloë endophytes, a well-known defensive mutualism. Currently, I study this symbiosis in the context of belowground herbivory.
+
+## Teaching
+
+I was an assistant teacher in the Ecology Department at the Faculty of Agronomy, University of Buenos Aires, from 2018 to 2022. After that, I moved to the Department of Quantitative Methods and Information Systems, where I have been ever since. I've been teaching students of Environmental Science and Agronomic Engineering their first Statistics course.
+
+
+## Programming
+
+I like to write small tools that I need or that I think would be nice to have, and also because it is fun!
+
+Most of my useful coding is done in R, as it is the language we use for statistics in ecology. I mostly write R code for data analysis, but I have also worked a bit with R packages. I contributed to [orchaRd](https://github.com/daniel1noble/orchaRd/), a package used for meta-analysis, by writing a couple of functions for conducting and plotting leave-one-out analyses.
+
+My other programming work is related to small personal projects. I like to write small tools for very specific problems, or just try to build something and see if it works. For this non-work programming, I usually use Python, but I have also done some C, Go, and written lots of small Bash scripts.
+
+## Veganism
+
+I am vegan. Many people can decide every day what to eat. Some food options require animals to suffer and be killed; some options don't. Whenever possible, choose the latter. Nobody should pay for a product that requires suffering and pain to be produced. Also, veganism is a win-win-win ([Tilman & Clark, 2014](https://doi.org/10.1038/nature13959); [Clark et al. 2018](https://doi.org/10.1038/nature13959); [Clark et al. 2019](https://doi.org/10.1038/nature13959); [Scherer et al. 2019](https://doi.org/10.1038/nature13959): it is good for your health, good for the environment, and good for the animals.
+
+`,
     bio_additional:
       "This is my bio additional",
 
